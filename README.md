@@ -1,1 +1,0 @@
-# sonar_predica_test

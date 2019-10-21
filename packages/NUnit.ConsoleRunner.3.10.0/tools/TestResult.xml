@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="5" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-07-23 08:49:49Z" end-time="2019-07-23 08:50:00Z" duration="10.231442">
+  <command-line><![CDATA[nunit3-console.exe  C:\Users\BRITENET\source\repos\PredicaTask\PredicaTask\bin\Debug\PredicaTask.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="PredicaTask.dll" fullname="C:\Users\BRITENET\source\repos\PredicaTask\PredicaTask\bin\Debug\PredicaTask.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-07-23 08:49:50Z" end-time="2019-07-23 08:50:00Z" duration="9.681588" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17134.0" platform="Win32NT" cwd="C:\Users\BRITENET\source\repos\PredicaTask\packages\NUnit.ConsoleRunner.3.10.0\tools" machine-name="BTN1707" user="BRITENET" user-domain="BTN1707" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\BRITENET\source\repos\PredicaTask\packages\NUnit.ConsoleRunner.3.10.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="6288" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1004" name="PredicaTask" fullname="PredicaTask" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-07-23 08:49:50Z" end-time="2019-07-23 08:50:00Z" duration="9.659787" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+      <test-suite type="TestSuite" id="0-1005" name="Features" fullname="PredicaTask.Features" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-07-23 08:49:50Z" end-time="2019-07-23 08:50:00Z" duration="9.659287" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="TestFixture" id="0-1000" name="PredicaTaskFeature" fullname="PredicaTask.Features.PredicaTaskFeature" classname="PredicaTask.Features.PredicaTaskFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-07-23 08:49:50Z" end-time="2019-07-23 08:50:00Z" duration="9.655041" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+          <properties>
+            <property name="Description" value="Predica Task" />
+          </properties>
+          <output><![CDATA[-> Using default config
+]]></output>
+          <test-suite type="ParameterizedMethod" id="0-1002" name="SearchForPredicaOnGoogleAndCheckFewThings" fullname="PredicaTask.Features.PredicaTaskFeature.SearchForPredicaOnGoogleAndCheckFewThings" classname="PredicaTask.Features.PredicaTaskFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-07-23 08:49:50Z" end-time="2019-07-23 08:50:00Z" duration="9.311984" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+            <properties>
+              <property name="Description" value="Search for predica on google and check few things" />
+            </properties>
+            <test-case id="0-1001" name="SearchForPredicaOnGoogleAndCheckFewThings(&quot;https://www.google.com/&quot;,&quot;Predica&quot;,&quot;https://predica.pl/&quot;,&quot;Altowa 2, 02-386 Warszawa&quot;,&quot;LinkedIn&quot;,&quot;Facebook&quot;,null)" fullname="PredicaTask.Features.PredicaTaskFeature.SearchForPredicaOnGoogleAndCheckFewThings(&quot;https://www.google.com/&quot;,&quot;Predica&quot;,&quot;https://predica.pl/&quot;,&quot;Altowa 2, 02-386 Warszawa&quot;,&quot;LinkedIn&quot;,&quot;Facebook&quot;,null)" methodname="SearchForPredicaOnGoogleAndCheckFewThings" classname="PredicaTask.Features.PredicaTaskFeature" runstate="Runnable" seed="1447304013" result="Passed" start-time="2019-07-23 08:49:50Z" end-time="2019-07-23 08:50:00Z" duration="9.300699" asserts="5">
+              <output><![CDATA[Given I have Chrome browser opened
+Chrome browser successfully opened
+-> done: PredicaSteps.GivenIHaveChromeBrowserOpened() (1.2s)
+When I put https://www.google.com/ into the address bar and hit Enter
+Page loaded is Google-Search
+-> done: PredicaSteps.WhenIPutGoogleUrlIntoTheAddressBarAndHitEnter("https://www.googl...") (1.0s)
+Then I will see the empty search input
+Search input is visible
+-> done: PredicaSteps.ThenIWillSeeTheEmptySearchInput() (0.1s)
+When I put Predica into Google's search and hit Enter
+Successfully entered the text into the search input
+-> done: PredicaSteps.WhenIPutPredicaIntoGoogleSSearchAndHitEnter("Predica") (1.6s)
+Then I should see the https://predica.pl/ as the first search result
+First result is: https://predica.pl/
+-> done: PredicaSteps.ThenIShouldSeeTheHttpsPredica_PlAsTheFirstSearchResult("https://predica.pl/") (0.1s)
+And I should see the proper Predica Altowa 2, 02-386 Warszawa within Predica google's details
+Contact details found: Altowa 2, 02-386 Warszawa
+-> done: PredicaSteps.ThenIShouldSeeTheProperPredicaWithinPredicaGoogleSDetails("Altowa 2, 02-386 ...") (0.1s)
+And Within 5 top search results I can see Predica's both LinkedIn and Facebook profiles
+Top 5 search results:
+  1 value found: Predica
+  2 value found: Predica LLC | LinkedIn
+  3 value found: Predica - Warszawa | Facebook
+  4 value found: Oferty pracy Predica Consulting Services sp. z o.o. sp.k. - pracodawcy ...
+  5 value found: Predica rozwija oddział w Lublinie. Jest praca dla programistów ...
+Both pages: linkedin and facebook found withing top 5 search results
+-> done: PredicaSteps.ThenWithinTopSearchResultsICanSeePredicaSBothAndProfiles(5, "LinkedIn", "Facebook") (0.4s)
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
